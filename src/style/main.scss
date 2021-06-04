@@ -1,28 +1,14 @@
-html {
-    font-size: 62.5%; // 1rem is 10px
+html {    //the default font size of a web app is 16px
+    font-size: 62.5% //now the default font size is 10px (62.5% of 16)
 }
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
+*, //basically this * means, on every element, 
+*::after, //every element after,
+*::before { //and every element before,
+    margin: 0; //we want to do all these things
+    padding:0;
+    box-sizing: inherit; 
 }
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+@import 'layout';
+@import 'headernavbar';
